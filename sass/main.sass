@@ -263,16 +263,93 @@ address
 	margin-bottom: 30px
 
 .about
+	border-bottom: 1px solid #e0e0e0
+	padding-bottom: 30px
+	text-align: center
+	margin-bottom: 40px
 	&-address
 		font-size: 13px
 		margin-bottom: 15px
 	&-contacts
 		font-size: 8px
+		font-family: arial
 		&__link
 			text-decoration: none
 			color: #777777
 		
 
+.heading
+	&_dark
+		font-size: 16px
+		font-weight: 400
+		border-bottom: 1px solid #e0e0e0
+		margin-bottom: 37px
+	&_skills
+		margin-bottom: 48px	
+
+.list
+	list-style: none
+	padding-left: 0px
+	&-item
+		position: relative
+		padding-left: 40px
+		padding-bottom: 30px
+		margin-bottom: 30px
+		border-bottom: 2px dashed #ececec
+		&:before
+			position: absolute
+			content: ''
+			top: 6px
+			left: 0
+			width: 9px
+			height: 9px
+			border-radius: 50%
+			background-color: #000
+		&__title
+			font-size: 11px
+			text-transform: uppercase
+			margin-bottom: 10px
+		&__date
+			font-size: 10px
+			text-transform: uppercase
+		&__text
+			font-size: 10px
+			color: #777
+		&_none-border
+			border: none	
+
+.skills
+	&-list
+		list-style-type: none
+		padding-left: 0
+		&__item
+			margin-bottom: 30px
+			text-transform: uppercase
+			font-size: 11px
+			display: flex
+			justify-content: space-between
+
+.level
+	width: 70%
+	height: 8px
+	border: 1px solid #39383a		
+	position: relative
+	&:before
+		height: 100%
+		width: 50%
+		background-color: #898989
+		position: absolute
+		left: 0
+		top: 0
+		content: ''	
+
+.level
+	&-30:before
+		width: 30%
+	&-50:before
+		width: 50%
+	&-90:before
+		width: 90%
 
 
 @import "media" // Всегда в конце
