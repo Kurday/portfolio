@@ -4,27 +4,77 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.container
+		width: 90%
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.container
+		flex-direction: column
+		width: 70%
 
+	.profile-photo
+		height: 400px
+		margin: auto	
+
+	.lines 
+		display: none
+
+	.logo
+		&-img
+			width: 70px
+			height: 70px
+		&-lines
+			margin-left: 8px
+			margin-right: 8px		
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.resume
+		padding: 0px
+		&-wrap
+			padding-left: 20px
+			padding-right: 20px
+
+	.logo
+		display: none
+	.list-item
+		&__title
+			font-size: 14px
+		&__date
+			font-size: 12px
+		&__text
+			font-size: 12px	
+			line-height: 1.4	
+	.about-contacts__link
+		font-size: 12px
+		display: block
+
+
+	
+
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.container
+		min-width: 320px
+	.name
+		letter-spacing: normal
+	.level
+		width: 50%
+		top: 4px
+
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+	
+	.container
+		min-width: 320px
+	.name
+		letter-spacing: normal
 
 
 /*==========  Mobile First  ==========*/
